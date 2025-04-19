@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian Cuisines</title>
+    <!-- jQuery, Popper.js, and Bootstrap JS for interactive components and layout functionality -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../Style-0/style-cuisine.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">About Malaysia</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Destination.html">Top Destinations</a></li>
+                        <li><a href="cuisine.html">Cuisines</a></li>
+                        <li><a href="cultureinsight.html">Cultural Insights</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Faq.html">FAQ</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="about_contact.html">About Us/Contact Us</a></li>
+        </ul>
+    </div>   
+
+    <div class="bookmark-section">
+        <button id="bookmark-page" class="btn btn-sm btn-outline-secondary">
+            <i class="far fa-bookmark"></i> Bookmark This Page
+        </button>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+    
+    <form class="menu-search-form d-flex" role="search">
+        <input type="text" id="menu-search-input" class="form-control" placeholder="Search...">
+        <button type="submit" class="btn btn-primary ms-2">🔍</button>
+    </form> 
+
+    <div class="cuisine-title">
+        <h1>Explore Malaysian Cuisines</h1>
+    </div>
+
+    <div id="favorites-section" class="container my-4">
+        <h3>Your Favorites:</h3>
+        <ul id="favorites-list" class="list-group"></ul>
+    </div>
+
+    <!-- Penang Cuisines -->
+    <div class="region" >
+        <div class="region-title">Penang</div>
+        <div class="food-container">
+            <a href="penang_food1.html">
+                <div class="food-box" id="kwayteow-box">
+                    <img src="../images/FriedKwayTeow.jpg" alt="Fried Kway Teow">
+                    <p class="food-name">Fried Kway Teow</p>
+                </div>
+            </a>
+            <a href="penang_food2.html">
+                <div class="food-box" id="laksa-box">
+                    <img src="../images/Laksa.jpg" alt="Laksa">
+                    <p class="food-name">Laksa</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Kuala Lumpur Cuisines -->    
+    <div class="region">
+        <div class="region-title">Kuala Lumpur</div>
+        <div class="food-container">
+            <a href="kl_food1.html">
+                <div class="food-box" id="nasilemak-box">
+                    <img src="../images/NasiLemak.jpg" alt="Nasi Lemak">
+                    <p class="food-name">Nasi Lemak</p>
+                </div>
+            </a>
+            <a href="kl_food2.html">
+                <div class="food-box" id="nasibananaleaf-box">
+                    <img src="../images/NasiBananaLeaf.jpg" alt="Nasi Banana Leaf">
+                    <p class="food-name">Nasi Banana Leaf</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Selangor Cuisines -->    
+    <div class="region">
+        <div class="region-title">Selangor</div>
+        <div class="food-container">
+            <a href="selangor_food1.html">
+                <div class="food-box" id="roticanai-box">
+                    <img src="../images/RotiCanai.jpg" alt="Roti Canai">
+                    <p class="food-name">Roti Canai</p>
+                </div>
+            </a>
+            <a href="selangor_food2.html">
+                <div class="food-box" id="dosa-box">
+                    <img src="../images/Dosa.jpg" alt="Dosa">
+                    <p class="food-name">Dosa</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sabah Cuisines -->   
+    <div class="region">
+        <div class="region-title">Sabah</div>
+        <div class="food-container">
+            <a href="sabah_food1.html">
+                <div class="food-box" id="hinava-box">
+                    <img src="../images/Hinava.jpg" alt="Hinava">
+                    <p class="food-name">Hinava</p>
+                </div>
+            </a>
+            <a href="sabah_food2.html">
+                <div class="food-box" id="tuaranmee-box">
+                    <img src="../images/TuaranMee.jpg" alt="Tuaran Mee">
+                    <p class="food-name">Tuaran Mee</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="bottom-button-container">
+        <a href="Index.html" class="back-button">&larr; Back to Home</a>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑TOP</button>
+    
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../Scripts/script_cuisine.js"></script>
+
+</body>
+</html>
+
+

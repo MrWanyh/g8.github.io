@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian Cultural Insights</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Style-0/style-culture.css">
+</head>
+<body>
+    <!-- Menu Bar -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">About Malaysia</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Destination.html">Top Destinations</a></li>
+                        <li><a href="cuisine.html">Cuisines</a></li>
+                        <li><a href="cultureinsight.html">Cultural Insights</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Faq.html">FAQ</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="about_contact.html">About Us/Contact Us</a></li>
+        </ul>
+    </div>
+
+    <form class="menu-search-form d-flex" role="search">
+        <input type="text" id="menu-search-input" class="form-control" placeholder="Search...">
+        <button type="submit" class="btn btn-primary ms-2">🔍</button>
+    </form> 
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeSwitch">
+        <label for="darkModeSwitch"><i class="fas fa-moon"></i> Dark Mode</label>
+    </div>
+
+    <div class="culture-container">
+        <h1>Malaysian Cultural Insights</h1>
+
+        <!-- Bookmark Button -->
+        <div class="bookmark-section">
+            <button id="bookmark-page">
+                <i class="far fa-bookmark"></i> Bookmark This Page
+            </button>
+        </div>
+
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Notification</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body"></div>
+            </div>
+        </div>
+
+        <!-- Batu Caves Section -->
+        <section class="culture-section" id="batu-caves">
+            <div class="image-gallery">
+                <img src="../images/batu caves1.jpeg" class="gallery-img" alt="Batu Caves">
+                <img src="../images/batucaves2.jpeg" class="gallery-img" alt="Batu Caves">
+            </div>
+
+            <div class="culture-item">
+                <h3>Sacred Hindu Site</h3>
+                <p>Batu Caves is one of Malaysia's most important Hindu shrines outside India. The 272 colorful steps lead to a series of caves housing temples and Hindu shrines.</p>
+                
+                <div class="dos-donts">
+                    <div class="dos">
+                        <h4>Do's</h4>
+                        <ul>
+                            <li>Dress modestly (cover shoulders and knees)</li>
+                            <li>Remove shoes before entering temple areas</li>
+                            <li>Visit during Thaipusam (Jan/Feb) for festival</li>
+                        </ul>
+                    </div>
+                    <div class="donts">
+                        <h4>Don'ts</h4>
+                        <ul>
+                            <li>Don't touch religious artifacts without permission</li>
+                            <li>Don't feed or provoke the monkeys</li>
+                            <li>Don't take photos during private prayers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- George Town Section -->
+        <section class="culture-section" id="georgetown">
+            <div class="image-gallery">
+                <img src="../images/Ggtown1.jpeg" class="gallery-img" alt="George Town">
+                <img src="../images/Ggtown2.jpg" class="gallery-img" alt="George Town">
+            </div>
+
+            <div class="culture-item">
+                <h3>UNESCO World Heritage Site</h3>
+                <p>Penang's capital showcases a unique blend of Chinese, Malay, Indian and British colonial influences through its architecture and street art.</p>
+                
+                <div class="dos-donts">
+                    <div class="dos">
+                        <h4>Do's</h4>
+                        <ul>
+                            <li>Explore the street art trail on foot</li>
+                            <li>Try Peranakan (Nyonya) cuisine</li>
+                            <li>Visit clan jetties to see stilt houses</li>
+                        </ul>
+                    </div>
+                    <div class="donts">
+                        <h4>Don'ts</h4>
+                        <ul>
+                            <li>Don't touch or deface the street art</li>
+                            <li>Don't photograph residents without asking</li>
+                            <li>Don't ignore local food customs (e.g., chopstick etiquette)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Petronas Towers Section -->
+        <section class="culture-section" id="petronas">
+            <div class="image-gallery">
+                <img src="../images/petronastower1.jpg" class="gallery-img" alt="Petronas Towers">
+                <img src="../images/petronastower2.jpg" class="gallery-img" alt="Petronas Towers">
+            </div>
+
+            <div class="culture-item">
+                <h3>Islamic Architecture</h3>
+                <p>The twin towers incorporate Islamic geometric patterns and Malay cultural elements in their design, symbolizing Malaysia's modernization while respecting tradition.</p>
+                
+                <div class="dos-donts">
+                    <div class="dos">
+                        <h4>Do's</h4>
+                        <ul>
+                            <li>Dress smart-casual for the skybridge visit</li>
+                            <li>Visit the mosque at tower base (dress code applies)</li>
+                            <li>Watch the evening fountain show</li>
+                        </ul>
+                    </div>
+                    <div class="donts">
+                        <h4>Don'ts</h4>
+                        <ul>
+                            <li>Don't be late for your skybridge time slot</li>
+                            <li>Don't take photos in restricted areas</li>
+                            <li>Don't ignore prayer times at the mosque</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mount Kinabalu Section -->
+        <section class="culture-section" id="kinabalu">
+            <div class="image-gallery">
+                <img src="../images/mountkinabalu1.jpeg" class="gallery-img" alt="Mount Kinabalu">
+                <img src="../images/mountkinabalu2.jpg" class="gallery-img" alt="Mount Kinabalu">
+            </div>
+
+            <div class="culture-item">
+                <h3>Sacred Mountain</h3>
+                <p>To the Kadazan-Dusun people, Mount Kinabalu is where spirits rest. Traditional rituals are still performed before climbs.</p>
+                
+                <div class="dos-donts">
+                    <div class="dos">
+                        <h4>Do's</h4>
+                        <ul>
+                            <li>Respect the mountain guide's instructions</li>
+                            <li>Point with thumb instead of index finger</li>
+                            <li>Try traditional Lihing rice wine</li>
+                        </ul>
+                    </div>
+                    <div class="donts">
+                        <h4>Don'ts</h4>
+                        <ul>
+                            <li>Don't shout or swear on the mountain</li>
+                            <li>Don't remove any plants or rocks</li>
+                            <li>Don't disrespect local beliefs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-button-container">
+        <a href="Index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑TOP</button>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="../Scripts/script_culture.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysia Cultural Community</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Style-0/style-community.css">
+</head>
+<body>
+    <!--  Menu Bar  -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">About Malaysia</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Destination.html">Top Destinations</a></li>
+                        <li><a href="cuisine.html">Cuisines</a></li>
+                        <li><a href="cultureinsight.html">Cultural Insights</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Faq.html">FAQ</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="about_contact.html">About Us/Contact Us</a></li>
+        </ul>
+    </div>
+
+    <form class="menu-search-form d-flex" role="search">
+        <input type="text" id="menu-search-input" class="form-control" placeholder="Search...">
+        <button type="submit" class="btn btn-primary ms-2">🔍</button>
+    </form> 
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeSwitch">
+        <label for="darkModeSwitch"><i class="fas fa-moon"></i> Dark Mode</label>
+    </div>
+
+    <div class="culture-container">
+        <h1>Malaysia Cultural Community</h1>
+        
+        <!-- Bookmark Button -->
+        <div class="bookmark-section">
+            <button id="bookmark-page" class="btn btn-sm btn-outline-secondary">
+                <i class="far fa-bookmark"></i> Bookmark This Page
+            </button>
+        </div>
+        
+        <!-- Share Form Section -->
+        <section id="post-form">
+            <h2 class="section-title">
+                Share Your Cultural Experience
+                <span class="title-decoration"></span>
+            </h2>
+            
+            <form id="experience-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name:</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="location" class="form-label">Cultural Site:</label>
+                    <select id="location" class="form-select" required>
+                        <option value="">-- Select --</option>
+                        <option value="batu-caves">Batu Caves</option>
+                        <option value="georgetown">George Town</option>
+                        <option value="petronas">Petronas Towers</option>
+                        <option value="kinabalu">Mount Kinabalu</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="story" class="form-label">Your Experience:</label>
+                    <textarea id="story" rows="5" class="form-control" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-warning">
+                    <i class="fas fa-share"></i> Share Story
+                </button>
+            </form>
+        </section>
+
+        <!-- Cultural Guidelines -->
+        <div class="dos-donts row">
+            <div class="dos col-md-6">
+                <h4>Cultural Do's</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Dress modestly at religious sites</li>
+                    <li class="list-group-item">Remove shoes before entering temples</li>
+                    <li class="list-group-item">Ask permission before taking photos of people</li>
+                </ul>
+            </div>
+            <div class="donts col-md-6">
+                <h4>Cultural Don'ts</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Don't touch religious artifacts</li>
+                    <li class="list-group-item">Don't point with your feet</li>
+                    <li class="list-group-item">Don't disrespect local customs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Community Posts Section -->
+        <section id="community-posts">
+            <h2 class="section-title posts-title">
+                Recent Cultural Stories
+                <span class="title-decoration"></span>
+            </h2>
+            
+            <div class="posts-container" id="posts-container">
+                <!-- Posts loaded dynamically -->
+            </div>
+        </section>
+
+        <div class="bottom-button-container">
+            <a href="Index.html" class="back-button btn btn-primary">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑TOP</button>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="../Scripts/script_community.js"></script>
+</body>
+</html>

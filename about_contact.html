@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Contact</title>
+    <!-- jQuery, Popper.js, and Bootstrap JS for interactive components and layout functionality -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../Style-0/style-about.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">About Malaysia</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Destination.html">Top Destinations</a></li>
+                        <li><a href="cuisine.html">Cuisine</a></li>
+                        <li><a href="cultureinsight.html">Cultural Insights</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Faq.html">FAQ</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="about_contact.html">About Us/Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bookmark-section">
+        <button id="bookmark-page" class="btn btn-sm btn-outline-secondary">
+            <i class="far fa-bookmark"></i> Bookmark This Page
+        </button>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <form class="menu-search-form d-flex" role="search">
+        <input type="text" id="menu-search-input" class="form-control" placeholder="Search...">
+        <button type="submit" class="btn btn-primary ms-2">🔍</button>
+    </form> 
+    
+    <div class="about-title">
+        <h1>About Us & Contact</h1>
+    </div>
+    
+    <section class="why-explore">
+        <h2>Why Explore the World?</h2>
+        <p>Welcome to Explore the World! We are a team of passionate travel enthusiasts, writers, and creators from Malaysia, 
+            who believe that every trip should be full of discoveries and unforgettable experiences. 
+            Whether you are a seasoned traveler or someone who wants to try a new challenge, our website aims to be your ultimate guide.</p>
+    </section>
+    
+    <div class="video-container">
+        <iframe width="760" height="400" src="https://www.youtube.com/embed/vbm90ThCNDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="mission-passion-container">
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>Provide travelers with comprehensive guides, useful tips, cultural insights and delicious cuisine from Malaysia. 
+                Whether you are planning a weekend getaway or a month-long adventure, we will provide you with the best recommendations 
+                for every type of traveler to bring you the best travel experience.</p>
+        </div>
+        <div class="passion">
+            <h3>Our Passion</h3>
+            <p>Inspire your next adventure – whether it’s through a new destination or a new dish. Let’s explore the world together!</p>
+        </div>
+    </div>
+    
+    <!-- Our Website Offers -->
+    <section class="website-offers">
+        <h2>Our Website Offers:</h2>
+        <div class="offer-grid">
+            <div class="offer-item">
+                <img src="../images/destination.jpg" alt="Destination Highlights">
+                <h3>Top Destinations</h3>
+                <p>Discover must-visit locations, from bustling cities to hidden gems.</p>
+                <a href="Destination.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="offer-item">
+                <img src="../images/culture.jpg" alt="Cultural Heritage">
+                <h3>Cultural Insights</h3>
+                <p>Learn about traditions, local customs, and historical landmarks.</p>
+                <a href="cultureinsight.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="offer-item">
+                <img src="../images/cuisine.jpg" alt="Authentic Cuisine">
+                <h3>Cuisines</h3>
+                <p>Experience the rich flavors of different regions through detailed food guides.</p>
+                <a href="cuisine.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="offer-item">
+                <img src="../images/community.jpg" alt="Traveler Community">
+                <h3>Community</h3>
+                <p>Connect with others, exchange travel tips, and share personal experiences.</p>
+                <a href="community.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="offer-item">
+                <img src="../images/faq.jpg" alt="FAQ">
+                <h3>FAQ</h3>
+                <p>Browse our FAQ section or contact us for assistance.</p>
+                <a href="Faq.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="offer-item">
+                <img src="../images/f.jpg" alt="Feedback">
+                <h3>Feedback</h3>
+                <p>Help us improve by sharing your thoughts, reporting issues, or suggesting new features.</p>
+                <a href="feedback.html" class="learn-more">Learn More</a>
+            </div>
+        </div>
+
+        <div class="bottom-button-container">
+            <a href="Index.html" class="back-button">&larr; Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p class="intro">
+        Whether you have questions, feedback, or just want to get in touch, feel free to contact us.
+    </p>
+
+    <div class="contact-info">
+        <h3>Contact Information:</h3>
+        <ul>
+            <li><strong>Email:</strong> support@exploretheworld.com</li>
+            <li><strong>Tel:</strong> +605 468 8888</li>
+            <li><strong>Address:</strong> No. 19, Jalan Yap Kwan Seng, Kampung Baru, 50350 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</li>
+        </ul>
+    </div>
+
+    <div class="opening-hours">
+        <h3>Opening Hours:</h3>
+        <ul>
+            <li>Monday to Friday: 9:00am - 6:00pm</li>
+            <li>Saturday: 10:00am - 2:00pm</li>
+            <li>Sunday: Closed</li>
+        </ul>
+    </div>
+
+    <div class="social-media">
+        <h3>Follow Us</h3>
+        <p>Stay connected with us on social media for the latest updates, tips, and travel inspiration.</p>
+        <ul>
+            <li><strong>Facebook:</strong> @ExploreTheWorld</li>
+            <li><strong>Instagram:</strong> @ExploreTheWorldTravel</li>
+        </ul>
+    </div>
+
+    <p class="closing">Feel free to contact us for any questions or collaboration opportunities!</p>
+</section>
+
+<button id="scrollToTopBtn" class="scroll-to-top-btn">↑TOP</button>
+    
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="../Scripts/script_about.js"></script>
+
+</body>
+</html>

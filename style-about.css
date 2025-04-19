@@ -1,0 +1,382 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: lightyellow;
+}
+
+.menu-bar {
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+    backdrop-filter: none; /* No backdrop effect */
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.sub-menu-1 ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #00c3a6;
+    border-radius: 25px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #99cbb8;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+.menu-search-form {
+    position: absolute;
+    top: 150px;        
+    left: 10px;      
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;     
+}
+
+.menu-search-form input[type="text"] {
+    width: 125px;         
+    height: 45px;   
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.menu-search-form button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bookmark-section {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#bookmark-page {
+    transition: all 0.3s;
+}
+
+.toast {
+    background-color: #3A7D44; 
+    color: black; 
+}
+
+
+.toast-body {
+    color: black;
+}
+
+.about-title h1 {
+    background: url('/images/travel.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Algerian, serif;
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.why-explore {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.why-explore h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.why-explore p {
+    font-size: 16px;
+    color: grey;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.video-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.mission-passion-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.mission, .passion {
+    width: 48%;
+    background-color: white;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3, .passion h3 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mission p, .passion p {
+    color: grey;
+    font-size: 16px;
+}
+
+.website-offers {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+}
+
+.website-offers h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.offer-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.offer-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.offer-item h3 {
+    font-size: 20px;
+    color: black;
+}
+
+.offer-item p {
+    color: grey;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.learn-more:hover {
+    color: lightblue;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: orangered;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 30px auto 40px;
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: transparent; 
+    padding: 30px 20px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.contact-us h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+.contact-us p.intro,.contact-us p.closing {
+    font-size: 15px;
+    margin: 10px 0;
+    color: gray;
+}
+
+.contact-us ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 15px;
+    color: gray;
+}
+
+.contact-us ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Adjust the menu layout for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .menu-bar ul {
+        flex-direction: column;
+    }
+    
+    .menu-bar ul li {
+        width: auto;
+    }
+
+    .menu-search-form {
+        top: 78%; 
+        left: 5px;
+        gap: 4px;
+    }
+    
+    .menu-search-form input[type="text"] {
+        width: 125px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .menu-search-form button {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    .back-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .mission-passion-container {
+        flex-direction: column;
+    }
+
+    .mission, .passion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .offer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cuisine-title h1 {
+        font-size: 32px;
+    }
+
+    .why-explore h2, .website-offers h2 {
+        font-size: 24px;
+    }
+}
+
+/* For extra small screens (max-width: 400px) */
+@media (max-width: 400px) {
+    .menu-bar ul {
+        flex-direction: column;
+    }
+    
+    .menu-bar ul li {
+        width: auto;
+    }
+    
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-search-form {
+        top: 60%; 
+        left: 5px;
+        gap: 4px;
+      }
+}
+

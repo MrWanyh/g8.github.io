@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabah Food</title>
+    <!-- jQuery, Popper.js, and Bootstrap JS for interactive components and layout functionality -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../Style-0/style-food.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">About Malaysia</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Destination.html">Top Destinations</a></li>
+                        <li><a href="cuisine.html">Cuisines</a></li>
+                        <li><a href="cultureinsight.html">Cultural Insights</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Faq.html">FAQ</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="about_contact.html">About Us/Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bookmark-section">
+        <button id="bookmark-page" class="btn btn-sm btn-outline-secondary">
+            <i class="far fa-bookmark"></i> Bookmark This Page
+        </button>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <form class="menu-search-form d-flex" role="search">
+        <input type="text" id="menu-search-input" class="form-control" placeholder="Search...">
+        <button type="submit" class="btn btn-primary ms-2">🔍</button>
+    </form> 
+    
+    <div class="header">Tuaran Mee </div>
+
+    <div class="main-container">
+        <div class="container">
+            <h2>Description</h2>
+            <p> Tuaran Mee is a specialty noodle dish from Sabah, usually with stir-fried bean sprouts, mushrooms and pork, 
+                and sprinkled with chives and chilies at the end, making it very rich in flavor.</p>
+
+            <h2>Recommended Restaurant</h2>
+            <p><a href="https://maps.app.goo.gl/7yp2e6NqPsWxnoe97" target="_blank">1. Tuaran Mee Restorant</a></p>
+            <p><strong>Opening Hours:</strong> 7:00am - 4:00pm </p>
+            <p><strong>Closed:</strong> Monday</p>
+            <p><strong>Contact:</strong> 088-447 533</p>
+
+            <div class="notes">
+                <p><strong>Notes:</strong></p>
+                <ul>
+                    <li>Not Halal</li>
+                </ul>
+            </div>
+            
+            <!-- Food Review Star Rating System -->
+            <div class="food-review">
+                <strong>Food Review:</strong>
+                <div class="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <span id="rating-text" class="review-text">Select your rating</span>
+                <br>
+                <span class="review-start">Start your review of <strong>Tuaran Mee Restorant</strong></a>
+                <br>
+                <button id="clearRatingBtn" class="btn btn-sm btn-danger mt-2">Clear Rating</button>
+            </div>
+        </div>
+
+        <div class="production-process">
+            <h2>Production Process (for reference only)</h2>
+            
+            <div class="video">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/hiMYJl3Vuxs" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-button-container">
+        <a href="cuisine.html" class="back-button">&larr; Back to Previous Page</a>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑TOP</button>
+    
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../Scripts/script_food.js"></script>
+
+</body>
+</html>

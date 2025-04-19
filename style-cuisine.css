@@ -1,0 +1,302 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: lightyellow;
+}
+
+.menu-bar {
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+    backdrop-filter: none; /* No backdrop effect */
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.sub-menu-1 ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #00c3a6;
+    border-radius: 25px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #99cbb8;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+.menu-search-form {
+    position: absolute;
+    top: 150px;          
+    left: 10px;   
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;      
+}
+
+.menu-search-form input[type="text"] {
+    width: 125px;         
+    height: 45px;   
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.menu-search-form button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cuisine-title h1 {
+    background: url('/images/food.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Algerian, serif;
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.region {
+    width: 65%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.region-title {
+    background-color: #2A9D8F;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.food-box {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.2s;
+    display: inline-block;
+    
+}
+
+/* Hover effect for the food box */
+.food-box:hover {
+    transform: scale(1.05);
+}
+
+/* Ensure food images fit inside the boxes */
+.food-box img {
+    width: 100%;
+    max-width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: orangered;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 30px auto 40px;
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+
+.back-button:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.bookmark-section {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#bookmark-page {
+    transition: all 0.3s;
+}
+
+.toast {
+    background-color: #3A7D44; 
+    color: black; 
+}
+
+.toast-body {
+    color: black; 
+}
+
+/* Adjust the menu layout for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .menu-bar ul {
+        flex-direction: column;
+    }
+    
+    .menu-bar ul li {
+        width: auto;
+    }
+    
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-search-form {
+        top: 76%; 
+        left: 5px;
+        gap: 4px;
+      }
+    
+      .menu-search-form input[type="text"] {
+        width: 125px;
+        height: 45px;
+        font-size: 14px;
+      }
+    
+      .menu-search-form button {
+        padding: 5px 8px;
+        font-size: 14px;
+      }
+
+    .container {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .food-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .food-box {
+        width: 100%;
+    }
+
+    .back-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* For extra small screens (max-width: 400px) */
+@media (max-width: 400px) {
+    .menu-bar ul {
+        flex-direction: column;
+    }
+    
+    .menu-bar ul li {
+        width: auto;
+    }
+    
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-search-form {
+        top: 60%; 
+        left: 5px;
+        gap: 4px;
+      }
+    }
+
+
+
